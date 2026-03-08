@@ -1,95 +1,121 @@
-✈️ Flight Fare Prediction
-📌 About The Project
+# ✈️ Flight Fare Prediction
 
-The Flight Fare Prediction App is a machine learning-based web application that predicts airline ticket prices based on various travel parameters. The goal of this project is to help users estimate flight fares in advance so they can plan their travel more efficiently.
+## 📌 About The Project
+
+The **Flight Fare Prediction App** is a machine learning-based web application that predicts airline ticket prices based on various travel parameters. The goal of this project is to help users estimate flight fares in advance so they can plan their travel more efficiently.
 
 The model is trained on historical flight data and uses machine learning algorithms to analyze factors such as:
 
-Airline
+- Airline  
+- Source and Destination  
+- Date of Journey  
+- Total Stops  
+- Departure Time  
+- Arrival Time  
+- Duration  
 
-Source and Destination
+Users can enter these details through a **web interface**, and the application predicts the expected flight price instantly.
 
-Date of Journey
+This project demonstrates the **end-to-end machine learning pipeline**, including:
 
-Total Stops
+- Data preprocessing  
+- Model training  
+- Experiment tracking  
+- Model deployment  
 
-Departure Time
+---
 
-Arrival Time
+# 🚀 Tech Stack
 
-Duration
+## Machine Learning
+- Pandas  
+- NumPy  
+- Scikit-learn  
+- Matplotlib  
+- Seaborn  
 
-Users can enter these details through a web interface, and the application predicts the expected flight price instantly.
+## Backend
+- Flask  
 
-This project demonstrates the end-to-end machine learning pipeline, including data preprocessing, model training, experiment tracking, and deployment.
+## MLOps Tools
+- MLflow (Experiment Tracking)  
+- DVC (Data Versioning)  
 
-🚀 Tech Stack
-Machine Learning
+## Deployment & Containerization
+- Docker  
 
-Pandas
+---
 
-NumPy
-
-Scikit-learn
-
-Matplotlib
-
-Seaborn
-
-Backend
-
-Flask
-
-MLOps Tools
-
-MLflow (experiment tracking)
-
-DVC (data versioning)
-
-Deployment & Containerization
-
-Docker
-
-📂 Project Structure
+# 📂 Project Structure
 Flight-Fare-Prediction
 │
-├── Notebook_Experiments       # Data analysis and model experimentation
-├── src                        # Source code for ML pipeline
-├── static                     # CSS / frontend assets
-├── templates                  # HTML templates
-├── artifacts                  # Trained model artifacts
-├── app.py                     # Flask application
-├── requirements.txt          # Project dependencies
-├── Dockerfile                # Docker configuration
+├── Notebook_Experiments # Data analysis and model experimentation
+├── src # Source code for ML pipeline
+├── static # CSS / frontend assets
+├── templates # HTML templates
+├── artifacts # Trained model artifacts
+├── app.py # Flask application
+├── requirements.txt # Project dependencies
+├── Dockerfile # Docker configuration
 └── README.md
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
+
+---
+
+## 📊 Features
+
+- ✅ Flight fare prediction using Machine Learning
+- ✅ Clean web interface built with Flask
+- ✅ ML experiment tracking using MLflow
+- ✅ Data versioning using DVC
+- ✅ Dockerized application for easy deployment
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/sarthakshahii/Flight-Fare-Prediction.git
 cd Flight-Fare-Prediction
-2️⃣ Create Virtual Environment
+```
+
+### 2️⃣ Create Virtual Environment
+```bash
 conda create -n flightfare python=3.9 -y
 conda activate flightfare
-3️⃣ Install Dependencies
+```
+
+### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-4️⃣ Run the Application
+```
+
+### 4️⃣ Run the Application
+```bash
 python app.py
-🌐 Access the Application
+```
 
-After running the app, open your browser and go to:
+### 🌐 Access the Application
 
+After running the application, open your browser and navigate to:
+```
 http://localhost:5000
+```
 
-Enter the flight details to get a predicted fare.
+Enter the flight details to get the predicted fare.
 
-🐳 Run Using Docker
-Pull Image
+---
+
+## 🐳 Run Using Docker
+
+### Pull Docker Image
+```bash
 docker pull sarthakshahi/flight-fare-prediction
-Run Container
-docker run -p 5000:5000 sarthakshahi/flight-fare-prediction
-📊 Features
+```
 
-✔ Flight fare prediction using machine learning
-✔ Clean web interface using Flask
-✔ ML experiment tracking with MLflow
-✔ Data versioning using DVC
-✔ Dockerized application for easy deployment
+### Run Docker Container
+```bash
+docker run -p 5000:5000 sarthakshahi/flight-fare-prediction
+```
+
+Then open `http://localhost:5000` in your browser.
